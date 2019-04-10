@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBelajarMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar Mobile Programming"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="42dp"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="23dp">
+
+            <TextView
+                android:id="@+id/tvPadaTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pada Tanggal"
+                android:textSize="15sp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"/>
+
+            <TextView
+                android:id="@+id/tvWaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/03/2019 18:45"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Android"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi kelas : "
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvValueLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kost Beverly Park"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:id="@+id/tvPersentase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Persentase yang diambil"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvSlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Slot"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/tvValuePersentase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5% / Bulan"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvValueSlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8 Orang"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/tvJumlahPeserta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Peserta : "
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvValueJumlahPeserta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Orang sudah terdaftar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor"
+            android:layout_marginTop="26dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/border_shape">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarMentor"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/avatar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/tvMentorNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erika Sukawati"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tvMentorJurusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S1 Teknik Informatika Unpad"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/tvMentorStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                    android:textSize="15sp"
+                    android:paddingRight="42dp"
+                    android:paddingEnd="42dp"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tujuan"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvTujuan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tvValueTujuan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvTujuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tvValueTujuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvTujuan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tvValueTujuan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvTujuan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tvValueTujuan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSyarat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Syarat"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvShape1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/dot_shape"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvValueShape1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahasiswa Teknik Informatika"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvShape2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/dot_shape"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvValueShape2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Niat untuk belajar android development"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvShape3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/dot_shape"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvValueShape3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mau mengeksplore tentang android development"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/tvLihatSemua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Semua"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/border_shape">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarReview1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/avatar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/tvReviewNama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erika Sukawati"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivStar1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_star"/>
+
+                    <TextView
+                        android:id="@+id/tvValueStar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.0"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvReviewStatus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                    android:textSize="15sp"
+                    android:paddingRight="42dp"
+                    android:paddingEnd="42dp"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/border_shape">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarReview2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/avatar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/tvReviewNama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erika Sukawati"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivStar2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_star"/>
+
+                    <TextView
+                        android:id="@+id/tvValueStar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.0"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvReviewStatus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscin elit."
+                    android:textSize="15sp"
+                    android:paddingRight="42dp"
+                    android:paddingEnd="42dp"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnIkutKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IKUT KELAS"
+            android:paddingVertical="16dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
